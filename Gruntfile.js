@@ -349,6 +349,17 @@ module.exports = function (grunt) {
       ]
     },
 
+    // php for dev
+    php: {
+      dist: {
+        options: {
+          port: 5000,
+          base: './app',
+          ini: './php.ini'
+        }
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -370,6 +381,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
+      'php',
       'watch'
     ]);
   });
