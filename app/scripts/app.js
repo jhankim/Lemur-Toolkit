@@ -22,7 +22,12 @@ angular
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
-        activetab: 'home'
+
+      })
+      .when('/validator', {
+        templateUrl: 'views/validator.html',
+        controller: 'ValidatorCtrl',
+
       })
       .otherwise({
         redirectTo: '/'

@@ -8,10 +8,6 @@
  * Controller of the ieToolkitApp
  */
 angular.module('ieToolkitApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ValidatorCtrl', function ($scope, $route) {
+    $scope.activeTab = $route.current.activetab;
   });
